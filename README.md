@@ -15,11 +15,14 @@
     <img src="https://badges.gitter.im/mne-tools/mne-cpp.svg" alt="Gitter">
 </a>
 </p>
+
+
+-----------------
+
 -----------------
 2024.08.19 
 Little bit modify for Qt6 and MSVC2022.
 Some include path is changed for "lsl_cpp.h".
-
 -----------------
 
 MNE-CPP is an open-source software framework which offers a variety of neuroscientific tools. It provides a cross-platform library, which allows to build standalone applications for the acquisition and processing of MEG/EEG data, both in real-time and offline. For more information and documentation please visit https://mne-cpp.github.io/.
