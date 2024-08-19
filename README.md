@@ -15,6 +15,10 @@
     <img src="https://badges.gitter.im/mne-tools/mne-cpp.svg" alt="Gitter">
 </a>
 </p>
+-----------------
+2024.08.19 
+Little bit modify for Qt6 and MSVC2022.
+Some include path is changed for "lsl_cpp.h".
 
 -----------------
 
