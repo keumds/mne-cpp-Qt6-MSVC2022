@@ -23,6 +23,8 @@ option(WASM "Setup build for wasm" OFF)
 
 option(USE_FFTW "Use fftw backend for eigen" OFF)
 
+add_compile_options(/bigobj)
+
 ##==============================================================================
 ## Set up compilation based on options
 
