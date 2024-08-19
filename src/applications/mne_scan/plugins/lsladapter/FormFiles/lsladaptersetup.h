@@ -42,7 +42,7 @@
 
 #include "ui_lsladaptersetup.h"
 
-#include <lsl_cpp.h>
+#include "../liblsl/install/include/lsl_cpp.h"
 
 //=============================================================================================================
 // QT INCLUDES
