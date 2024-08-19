@@ -102,9 +102,9 @@ Q_IMPORT_PLUGIN(BrainAMP)
 #ifdef WITHEEGOSPORTS
 Q_IMPORT_PLUGIN(EEGoSports)
 #endif
-#ifdef WITHLSL
+//#ifdef WITHLSL
 Q_IMPORT_PLUGIN(LSLAdapter)
-#endif
+//#endif
 #ifdef WITHTMSI
 Q_IMPORT_PLUGIN(TMSI)
 #endif
@@ -134,6 +134,7 @@ int main(int argc, char *argv[])
     Q_INIT_RESOURCE(averaging);
     Q_INIT_RESOURCE(writetofile);
     Q_INIT_RESOURCE(hpi);
+	Q_INIT_RESOURCE(lsladapter);
     #ifdef WITHBRAINAMP
     Q_INIT_RESOURCE(brainamp);
     #endif
