@@ -51,6 +51,9 @@ endif()
 
 target_include_directories(${PROJECT_NAME} PUBLIC ../)
 
+find_package(Qt6 REQUIRED COMPONENTS OpenGLWidgets)
+target_link_libraries(${PROJECT_NAME} PRIVATE Qt6::OpenGLWidgets)
+
 set(QT_REQUIRED_COMPONENT_LIBS ${QT_REQUIRED_COMPONENTS})
 list(TRANSFORM QT_REQUIRED_COMPONENT_LIBS PREPEND "Qt${QT_VERSION_MAJOR}::")
 
