@@ -34,7 +34,7 @@ add_subdirectory(hpi)
 add_subdirectory(rtfwd)
 
 option(WITH_BRAINFLOW   "Build brainflow plugin"    OFF)
-option(WITH_LSL         "Build LSL plugin"          OFF)
+option(WITH_LSL         "Build LSL plugin"          ON)
 option(WITH_BRAINAMP    "Build BrainAMP pluign"     OFF)
 option(WITH_EEGO        "Build Eego Sport plugin"   OFF)
 option(WITH_GUSBAMP     "Build GUSBAmp plugin"      OFF)
