@@ -276,8 +276,13 @@ void LSLAdapter::onLSLStreamScanReady()
 QVector<lsl::stream_info> LSLAdapter::scanAvailableLSLStreams()
 {
     // no filtering implemented so far, simply get all streams
-    QVector<lsl::stream_info> vAvailableStreams = QVector<lsl::stream_info>::fromStdVector(lsl::resolve_streams());
-    // do validity checks for all stream infos
+    //QVector<lsl::stream_info> vAvailableStreams = QVector<lsl::stream_info>::fromStdVector(lsl::resolve_streams());  // DS 240818
+    //QVector<lsl::stream_info> vAvailableStreams = QVector<lsl::stream_info>(lsl::resolve_streams().begin(),lsl::resolve_streams().end());
+    // DS by ChatGPT
+    std::vector<lsl::stream_info> stdStreams = lsl::resolve_streams();
+    QVector<lsl::stream_info> vAvailableStreams = QVector<lsl::stream_info>(stdStreams.begin(), stdStreams.end());
+    // DS by ChatGPT
+
     for(int i = 0; i < vAvailableStreams.size(); ++i) {
         if(isValid(vAvailableStreams[i]) == false) {
             vAvailableStreams.remove(i);

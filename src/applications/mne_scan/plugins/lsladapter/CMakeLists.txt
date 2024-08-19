@@ -29,7 +29,7 @@ set(UI
 )
 
 set(RESOURCES
-    lsladapter.qrc
+    # lsladapter.qrc  # DS 240818
 )
 
 set(FILE_TO_UPDATE lsladapter_global.cpp)
